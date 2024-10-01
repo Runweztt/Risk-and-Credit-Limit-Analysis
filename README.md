@@ -1,28 +1,36 @@
 # Risk-and-Credit-Limit-Analysis
- Risk and Credit Analysis
-Introduction
-In today's financial landscape, understanding customer credit behavior is crucial for financial institutions to assess risk and make informed lending decisions. One of the key factors influencing a customer’s financial risk profile is their credit utilization ratio, which measures how much credit a customer is using relative to their credit limit. Additionally, analyzing payment behaviors—such as full payments, minimum payments, or partial payments—can provide valuable insights into potential defaults.
+ #Risk and Credit Analysis
+ 
+# Introduction
+
+
+In today's financial landscape, understanding customer credit behavior is crucial for financial institutions to assess risk and make informed lending decisions. One of the key factors influencing a customer’s financial risk profile is their credit utilization ratio, which measures how much credit a customer is using relative to their credit limit. Additionally, analyzing payment behaviors such as full payments, minimum payments, or partial payments can provide valuable insights into potential defaults.
 In this analysis, we dive deep into the relationship between credit utilization, payment patterns, and default risk among a group of customers. By identifying high-risk individuals based on these financial indicators, we aim to help financial institutions proactively manage credit risk and maintain portfolio stability. Specifically, we’ll be looking at how factors like high credit utilization and missed payments correlate with elevated risk categories.
 This kind of analysis is essential in ensuring that financial services can identify early warning signs and take appropriate action to mitigate losses while ensuring customers can continue managing their credit effectively.
-Project Overview: 
+
+
+#Project Overview: 
 This project aims to evaluate customer behavior concerning their credit limits and risk of default. By analyzing factors such as credit utilization ratios, payment patterns, and balances, we can draw insights about customers who might be at financial risk and propose strategies to mitigate those risks.
 Tools Used
-Python:
+#Python:
 Python was employed for advanced data manipulation, analysis, and visualization:
 Data Cleaning and Preprocessing:
 Libraries Used: Pandas, NumPy
 Python was used to clean the dataset by handling missing values, detecting outliers, and ensuring data consistency for analysis.
 
-Statistical Analysis:
+#Statistical Analysis:
 Descriptive Statistics: Python was used to calculate key statistical measures such as the mean, standard deviation, and percentiles, providing insights into credit utilization and payment behavior.
-Data Visualization:
+
+#Data Visualization:
 Libraries Used: Matplotlib, Seaborn
 Python created visualizations like scatter plots and histograms to explore relationships between credit limit, balance, and other variables, making patterns easier to interpret.
-Excel:
+
+#Excel:
 Excel was used for basic exploratory analysis, particularly to understand data patterns and missing values:
 Data Exploration:
 Excel helped in quickly identifying patterns in the dataset, such as missing values and outliers, before more detailed analysis in Python.
-Data Cleaning Steps
+
+#Data Cleaning Steps
 Step 1: Identify Missing Data
 I started by checking for missing values and found when the "Payments" column   row were 0. that"Minimum Payment" row next to it  had missing values when the 
 Step 2: Choose an Imputation Strategy
