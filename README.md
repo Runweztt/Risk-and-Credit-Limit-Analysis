@@ -1,5 +1,5 @@
 # Risk-and-Credit-Limit-Analysis
- #Risk and Credit Analysis
+
  
 # Introduction
 
@@ -9,30 +9,36 @@ In this analysis, we dive deep into the relationship between credit utilization,
 This kind of analysis is essential in ensuring that financial services can identify early warning signs and take appropriate action to mitigate losses while ensuring customers can continue managing their credit effectively.
 
 
-#Project Overview: 
+# Project Overview: 
+
 This project aims to evaluate customer behavior concerning their credit limits and risk of default. By analyzing factors such as credit utilization ratios, payment patterns, and balances, we can draw insights about customers who might be at financial risk and propose strategies to mitigate those risks.
 Tools Used
+
 #Python:
+
 Python was employed for advanced data manipulation, analysis, and visualization:
 Data Cleaning and Preprocessing:
 Libraries Used: Pandas, NumPy
 Python was used to clean the dataset by handling missing values, detecting outliers, and ensuring data consistency for analysis.
 
-#Statistical Analysis:
+# Statistical Analysis:
 Descriptive Statistics: Python was used to calculate key statistical measures such as the mean, standard deviation, and percentiles, providing insights into credit utilization and payment behavior.
 
-#Data Visualization:
+# Data Visualization:
+
 Libraries Used: Matplotlib, Seaborn
 Python created visualizations like scatter plots and histograms to explore relationships between credit limit, balance, and other variables, making patterns easier to interpret.
 
-#Excel:
+# Excel:
+
 Excel was used for basic exploratory analysis, particularly to understand data patterns and missing values:
 Data Exploration:
 Excel helped in quickly identifying patterns in the dataset, such as missing values and outliers, before more detailed analysis in Python.
 
-#Data Cleaning Steps
-Step 1: Identify Missing Data
-I started by checking for missing values and found when the "Payments" column   row were 0. that"Minimum Payment" row next to it  had missing values when the 
+# Data Cleaning Steps
+
+#Step 1: Identify Missing Data
+I started by checking for missing values and found out that when the "Payments" column   row has  0 input . the "Minimum Payment" row next to it  had missing values 
 Step 2: Choose an Imputation Strategy
 Since missing "Minimum Payment" values were mostly tied to 0 payments, I decided to fill those missing values with 0.
 Step 3: Apply the Imputation
@@ -43,56 +49,74 @@ Step 5: Review the Cleaned Data
 After these steps, I checked the data to ensure everything was cleaned and ready for analysis.
 
 
-1. Credit Limit Analysis
+#1. Credit Limit Analysis
+
 a. Determine Credit Utilization
+
 Steps: 
 Calculate Credit Utilization Ratio: This measures the percentage of credit customers use relative to their credit limit.
 Analyze Utilization Across Customers: We explore how credit utilization varies among different customer segments.
+
 Questions:
 · What is the average credit utilization ratio across all customers?
 · Are there any customers with unusually high or low credit utilization?
-·        How does credit utilization vary across different customer segments?
+· How does credit utilization vary across different customer segments?
+
 1.a Credit Limit Analysis
 Summary Statistics Explained:
-1. 
+ 
 Count (8949):
-1. This indicates that there are 8,949 observations (customers) in the dataset used to calculate the credit utilization ratio. It represents the total number of data points.
-3. 
+ This indicates that there are 8,949 observations (customers) in the dataset used to calculate the credit utilization ratio. It represents the total number of data points.
+ 
 Mean (0.388926):
-1. The average credit utilization ratio across all customers is approximately 0.39, or 39%. This means that, on average, customers are utilizing about 39% of their available credit.
+ The average credit utilization ratio across all customers is approximately 0.39, or 39%. This means that, on average, customers are utilizing about 39% of their available credit.
+ 
 Standard Deviation (0.389722):
-1. The standard deviation is about 0.39, indicating how spread out the credit utilization ratios are from the mean. A larger standard deviation suggests that there are significant variations in how different customers use their credit.
+ The standard deviation is about 0.39, indicating how spread out the credit utilization ratios are from the mean. A larger standard deviation suggests that there are significant variations in how different customers use their credit.
+ 
 Minimum (0.000000):
-1. The minimum credit utilization ratio is 0.0, meaning some customers have a balance of $0 compared to their credit limit, indicating they are not using their credit at all.
+The minimum credit utilization ratio is 0.0, meaning some customers have a balance of $0 compared to their credit limit, indicating they are not using their credit at all.
+
 25th Percentile (0.041527):
-1. Also known as Q1, this value indicates that 25% of customers have a credit utilization ratio of 4.15% or lower. This shows that a significant portion of customers maintains very low utilization levels.
+ Also known as Q1, this value indicates that 25% of customers have a credit utilization ratio of 4.15% or lower. This shows that a significant portion of customers maintains very low utilization levels.
+ 
 Median (50th Percentile) (0.302870):
-1. The median credit utilization ratio is approximately 30.29%. This is the midpoint of the data, meaning half of the customers have a utilization ratio below this value and half above. This indicates that while the average is around 39%, many customers are using significantly less credit.
+The median credit utilization ratio is approximately 30.29%. This is the midpoint of the data, meaning half of the customers have a utilization ratio below this value and half above. This indicates that while the average is around 39%, many customers are using significantly less credit.
+
 75th Percentile (0.717582):
-1. Also known as Q3, this value indicates that 75% of customers have a credit utilization ratio of 71.76% or lower. This suggests that a large segment of customers is using a moderate to high portion of their available credit.
+ Also known as Q3, this value indicates that 75% of customers have a credit utilization ratio of 71.76% or lower. This suggests that a large segment of customers is using a moderate to high portion of their available credit.
+ 
 Maximum (15.909951): 
-1. The maximum credit utilization ratio is approximately 15.91, which is unusually high. This indicates that there are some customers with balances that significantly exceed their credit limits, suggesting possible overextension or mismanagement of credit.
-Insights from the Statistics:
+ The maximum credit utilization ratio is approximately 15.91, which is unusually high. This indicates that there are some customers with balances that significantly exceed their credit limits, suggesting possible overextension or mismanagement of credit.
+ 
+# Insights from the Statistics:
+
 · General Usage: On average, customers are utilizing a moderate amount of their available credit, but the wide standard deviation suggests varied behavior among customers.
 · Risk Consideration: The presence of a maximum ratio above 15 indicates that there may be customers at risk of default or mismanagement of their credit.
 · Low Utilizers: A significant portion of customers maintains low credit utilization, as indicated by the low 25th percentile, which could reflect cautious financial behavior or underutilization of available credit.
 · High Utilizers: The high 75th percentile indicates a segment of customers using a large portion of their credit, which could be a potential area of concern for risk management.
-Average Credit Utilization Ratio: 0.39
-· Interpretation: The average credit utilization ratio of 0.39 means that, across all customers in the dataset, customers are using about 39% of their available credit. This indicates a moderate level of credit usage overall.
+
+#Average Credit Utilization Ratio: 0.39
+
+· The average credit utilization ratio of 0.39 means that, across all customers in the dataset, customers are using about 39% of their available credit. This indicates a moderate level of credit usage overall.
+
 Customers with High Credit Utilization
-· 
-Definition: In this context, "high credit utilization" typically refers to customers with a utilization ratio greater than 1.0, meaning they owe more than their credit limit.
+
+·  In this context, "high credit utilization" typically refers to customers with a utilization ratio greater than 1.0, meaning they owe more than their credit limit.
 Examples:
 o Customers like C10006 (1.01), C10011 (1.08), and C10015 (0.92) have ratios indicating they are either over-utilizing their credit or close to their limits. This behavior could suggest financial strain or overextension.
 · 
-Implications:
+#Implications:
 · 
 o Risk Management: High credit utilization ratios can be a red flag for potential default risk. Customers consistently using more than their limit may struggle to make payments.
 o Customer Support: Identifying these customers could lead to proactive outreach or financial counseling to help them manage their credit better.
 · 
-Data Sample: The output mentions that there are 1,812 customers identified with high credit utilization, indicating a significant segment of the customer base that may need attention.
-· Customers with Low Credit Utilization· 
-Definition: Low credit utilization typically refers to customers with a ratio significantly below the average, often under 0.2 or 20%.
+#Data Sample: The output mentions that there are 1,812 customers identified with high credit utilization, indicating a significant segment of the customer base that may need attention.
+
+
+# Customers with Low Credit Utilization· 
+
+ Low credit utilization typically refers to customers with a ratio significantly below the average, often under 0.2 or 20%.
 Examples:
 o Customers like C10001 (0.04), C10007 (0.05), and C10009 (0.14) have low ratios, suggesting they are using a small fraction of their available credit.
 Implications:
@@ -100,32 +124,50 @@ o Financial Health: Low utilization can indicate a conservative approach to cred
 o Marketing Opportunities: They could be targeted for offers encouraging more active use of credit, such as rewards programs or promotional offers.
 Data Sample: There are 4,948 customers identified with low credit utilization, indicating another substantial segment that represents different financial behaviors.
 · 
-Overall Insights
+
+# Overall Insights
 · 
 Diversity in Customer Behavior: The dataset reveals a diverse range of credit utilization behaviors. While the average is 0.39, there's a significant difference between those who overutilize credit and those who underutilize it. 
+
 Targeted Strategies:· 
 o For High Utilizers: Risk assessment strategies might be needed, including monitoring account activity and offering financial education.
-o For Low Utilizers: Opportunities for engagement to encourage responsible credit usage can help deepen the relationship and possibly increase revenue through usage-based fees or interest.
-2. Assess Credit Limit Adequacy
+o For Low Utilizers: Opportunities for engagement to encourage responsible credit usage can help deepen the relationship and possibly increase 
+revenue through usage-based fees or interest.
+
+
+
+#2. Assess Credit Limit Adequacy
+
+
 Steps:
 Compare Balance to Credit Limit: Analyze the distribution of balances relative to credit limits to understand if credit limits are generally adequate or excessive.
 Identify High Risk Customers: Determine which customers are close to or exceeding their credit limit.
+
 Questions:
 Are there customers who are frequently near or at their credit limit?
 Is there a correlation between credit limit size and customer balance?
+
  b. Assess Credit Limit Adequacy
-Analysis Breakdown:
+
+#Analysis Breakdown:
+
 C10006 has a balance of 1,809.83 against a credit limit of 1,800.00, meaning they have exceeded their credit limit by a small margin (ratio of 1.005).
 
 C10011 has a balance of 1,293.12 on a limit of 1,200.00, with a ratio of 1.078, meaning they are 7.8% over their limit.
 
 C10015 is slightly below the limit with a ratio of 0.924, meaning they have used 92.4% of their available credit.
+
 Interpretation:
 Customers with a balance-to-credit ratio greater than or equal to 1 are considered at high risk since they have already maxed out or exceeded their credit limits.
 
 Even those with ratios close to 1 (like 0.92 or 0.95) are also concerning because they are nearing their credit limits and may face issues if they need more credit.
 This could be a signal for financial institutions to review their credit terms or consider additional risk management strategies for these customers.
-The scatter plot visualizes the relationship between Credit Limit and Balance for each customer in the dataset. The correlation between these two variables is 0.5313, which indicates a moderate positive correlation. Here's what that means:
+
+
+# The scatter plot
+
+visualizes the relationship between Credit Limit and Balance for each customer in the dataset. The correlation between these two variables is 0.5313, which indicates a moderate positive correlation. Here's what that means:
+
 Key Points:
 Positive Correlation:
 
@@ -142,11 +184,15 @@ The plot shows that as Credit Limit increases (above 10,000), the variance in Ba
 Clusters at Lower Credit Limits:
 
 For customers with lower credit limits (below 10,000), there is a denser concentration of points with balances ranging from 0 to about 5,000. This suggests that most customers with smaller credit limits also maintain smaller balances.
+
 Conclusion:
 The moderate positive correlation indicates that customers with higher credit limits tend to have higher balances, but the relationship is not perfectly linear. External factors like spending habits, payment frequency, and creditworthiness likely influence the balance-credit limit dynamics.
 
 
-3.Risk Analysis
+
+# 3.Risk Analysis
+
+
 a. Identify Risk Indicators
 Steps:
 Analyze Payment Behavior: Compare PAYMENTS with MINIMUM_PAYMENTS to see if customers are consistently meeting or exceeding the minimum payment requirement.
@@ -154,13 +200,14 @@ Steps:
 Questions:
 What percentage of customers make full payments versus partial payments?
 How does the risk of default correlate with payment behavior?
-4.
-Analysis Breakdown
+
+# Analysis Breakdown
+
 Percentage of Customers Meeting or Exceeding Minimum Payments: 70.08%
 
  Approximately 70% of customers are making payments that meet or exceed the minimum required payment. This indicates a relatively healthy payment behavior among the majority of the customer base. However, it also suggests that around 30% of customers are not meeting the minimum payments, which could be a potential risk factor.
 
-Percentage of Customers Making Full Payments: 5.45%
+# Percentage of Customers Making Full Payments: 5.45%
 
 : Only about 5.45% of customers are paying off their full balance each month. This low percentage could signal that most customers are either struggling financially or are choosing not to pay their balances in full, which may lead to increased interest charges and potential debt accumulation.
 
@@ -168,7 +215,10 @@ Percentage of Customers Making Partial Payments: 94.55%
 
  A staggering 94.55% of customers are making partial payments. This high percentage indicates that most customers are not managing to pay off their balances fully, which can increase their financial risk and may lead to a higher likelihood of defaults.
 Implications
-Risk Indicators: The combination of a low percentage of full payments and a high percentage of partial payments suggests a potential risk for the lender. Customers consistently making partial payments might accumulate more debt over time, which could lead to defaults, especially if they also struggle to meet minimum payments.
+
+#Risk Indicators: 
+
+The combination of a low percentage of full payments and a high percentage of partial payments suggests a potential risk for the lender. Customers consistently making partial payments might accumulate more debt over time, which could lead to defaults, especially if they also struggle to meet minimum payments.
 
 Financial Health: The relatively high percentage of customers meeting minimum payments is encouraging, but the overall payment behavior raises concerns about long-term financial health. With such a high rate of partial payments, it may be worth exploring strategies to encourage customers to make full payments.
 
@@ -180,7 +230,9 @@ Investigate Customer Feedback: Conduct surveys or gather feedback to understand 
 
 Monitor Payment Trends: Continue to track these metrics over time to observe trends. Are customers improving their payment habits, or is there a growing risk of default?
 Insights
-High-Risk Indicators:
+
+
+#High-Risk Indicators:
 
 CUST_ID C10006 and CUST_ID C10011 both have a BALANCE_TO_CREDIT_RATIO greater than 1 (1.0055 and 1.0776, respectively). This indicates that these customers are exceeding their credit limits, making them high-risk borrowers. Exceeding the credit limit can lead to penalties and increased interest rates, heightening the risk of default.
 
@@ -197,17 +249,24 @@ Credit Limit Review: For customers like C10015 and C10027, consider reviewing th
 Financial Education: Offering financial education resources or workshops to help customers understand the importance of staying within their credit limits and the consequences of exceeding them may be beneficial.
 
 Personalized Communication: Engaging with customers who are at risk of exceeding their credit limits with personalized communication could help prevent potential defaults.
-Analysis of Payment Behavior and Risk Indicators
-1. Payment Behavior Insights:
-The bar chart you've provided visualizes the distribution of full versus partial payments made by customers. The data reveals the following:
-Percentage of Full Payments: Only 5.45% of customers make full payments.
 
+
+# Analysis of Payment Behavior and Risk Indicators
+
+
+1. Payment Behavior Insights:
+The bar chart shows the distribution of full versus partial payments made by customers. The data reveals the following:
+Percentage of Full Payments: Only 5.45% of customers make full payments.
 Percentage of Partial Payments: A staggering 94.55% of customers are making partial payments.
+
 This significant difference highlights a concerning trend, suggesting that the majority of customers are not paying off their balances in full, which can increase their risk of falling into debt and potentially defaulting.
+
 2. Correlation Between Meeting Minimum Payments and High Risk:
 The correlation coefficient of -0.36 indicates a moderate negative correlation between customers meeting their minimum payments and the risk of default. This suggests that:
 As the likelihood of meeting or exceeding minimum payments increases, the risk of default decreases. Conversely, if customers are regularly not meeting their minimum payments, their risk of default increases.
-Insights on High-Risk Customers:
+
+# Insights on High-Risk Customers:
+
 High risk customers, who often do not meet their minimum payments or only make partial payments, are in a precarious financial situation. This behavior can lead to accumulating debt and higher chances of default.
 Recommendations:
 Engagement Strategies: Implement targeted communication strategies for customers who frequently make partial payments, providing resources on financial management and the benefits of making full payments.
@@ -217,13 +276,15 @@ Monitoring and Alerts: Set up systems to monitor payment behavior closely. Custo
 Incentives for Full Payments: Consider offering incentives, such as reduced interest rates or rewards points, for customers who make full payments regularly.
 Financial Education: Increase awareness through workshops or resources aimed at educating customers about the implications of partial payments and the importance of maintaining good payment behavior to avoid high-risk situations
 
-4 Evaluate Default Risk
+ # 4 Evaluate Default Risk
+ 
 Steps:
 Calculate the Risk of Default: Identify patterns and indicators that suggest a higher likelihood of default or late payments.
 Use Payment Patterns and Credit Utilization: Combine factors such as credit utilization, payment patterns, and balances to build a risk profile.
 Questions:
 Are there specific factors (e.g., high credit utilization, low payments) that are strongly associated with a higher risk of default?
 Which customers are at the highest risk of default based on current data?
+
   Evaluate Default Risk
 Insights on Average Credit Utilization Ratio
 Interpretation of 0.39:
