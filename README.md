@@ -164,7 +164,7 @@ Even those with ratios close to 1 (like 0.92 or 0.95) are also concerning becaus
 This could be a signal for financial institutions to review their credit terms or consider additional risk management strategies for these customers.
 
 
-# The scatter plot
+# The scatter plot Correlation between Credit Limit and Balance 
 
 visualizes the relationship between Credit Limit and Balance for each customer in the dataset. The correlation between these two variables is 0.5313, which indicates a moderate positive correlation. Here's what that means:
 
