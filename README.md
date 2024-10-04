@@ -49,7 +49,7 @@ Step 5: Review the Cleaned Data
 After these steps, I checked the data to ensure everything was cleaned and ready for analysis.
 
 
-#1. Credit Limit Analysis
+                     #1. Credit Limit Analysis
 
 a. Determine Credit Utilization
 
@@ -136,7 +136,7 @@ revenue through usage-based fees or interest.
 
 
 
-#2. Assess Credit Limit Adequacy
+                    #2. Assess Credit Limit Adequacy
 
 
 Steps:
@@ -164,33 +164,7 @@ Even those with ratios close to 1 (like 0.92 or 0.95) are also concerning becaus
 This could be a signal for financial institutions to review their credit terms or consider additional risk management strategies for these customers.
 
 
-# The scatter plot Correlation between Credit Limit and Balance 
-
-visualizes the relationship between Credit Limit and Balance for each customer in the dataset. The correlation between these two variables is 0.5313, which indicates a moderate positive correlation. Here's what that means:
-
-Key Points:
-Positive Correlation:
-
-The value of 0.5313 suggests that as the Credit Limit increases, the Balance tends to increase as well. This is evident in the upward trend in the scatter plot, where higher credit limits generally correspond with higher balances.
-
-Moderate Strength:
-
-A correlation of 0.5313 indicates a moderate relationship, meaning that while there is a clear trend, it’s not a perfect or strong correlation. Many data points deviate from this trend, especially as credit limits rise.
-
-Variability at Higher Credit Limits:
-
-The plot shows that as Credit Limit increases (above 10,000), the variance in Balance becomes larger. Some customers with high credit limits have relatively low balances, while others have very high balances, creating a spread of points. This implies that higher credit limits do not always result in proportionally higher balances.
-
-Clusters at Lower Credit Limits:
-
-For customers with lower credit limits (below 10,000), there is a denser concentration of points with balances ranging from 0 to about 5,000. This suggests that most customers with smaller credit limits also maintain smaller balances.
-
-Conclusion:
-The moderate positive correlation indicates that customers with higher credit limits tend to have higher balances, but the relationship is not perfectly linear. External factors like spending habits, payment frequency, and creditworthiness likely influence the balance-credit limit dynamics.
-
-
-
-# 3.Risk Analysis
+                 # 3.Risk Analysis
 
 
 a. Identify Risk Indicators
