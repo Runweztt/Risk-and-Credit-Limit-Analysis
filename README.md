@@ -164,7 +164,7 @@ Even those with ratios close to 1 (like 0.92 or 0.95) are also concerning becaus
 This could be a signal for financial institutions to review their credit terms or consider additional risk management strategies for these customers.
 
 
-                 # 3.Risk Analysis
+                                    # 3.Risk Analysis
 
 
 a. Identify Risk Indicators
@@ -250,7 +250,7 @@ Monitoring and Alerts: Set up systems to monitor payment behavior closely. Custo
 Incentives for Full Payments: Consider offering incentives, such as reduced interest rates or rewards points, for customers who make full payments regularly.
 Financial Education: Increase awareness through workshops or resources aimed at educating customers about the implications of partial payments and the importance of maintaining good payment behavior to avoid high-risk situations
 
- # 4 Evaluate Default Risk
+                              # 4 Evaluate Default Risk
  
 Steps:
 Calculate the Risk of Default: Identify patterns and indicators that suggest a higher likelihood of default or late payments.
